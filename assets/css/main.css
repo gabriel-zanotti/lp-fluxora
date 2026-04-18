@@ -1001,8 +1001,14 @@ body.has-js .reveal.in-view {
     align-items: stretch;
   }
 
-  .btn {
+  main .btn,
+  .cta-block .btn,
+  .pricing-card .btn {
     width: 100%;
+  }
+
+  .topbar .btn {
+    width: auto;
   }
 
   .panel-row,
