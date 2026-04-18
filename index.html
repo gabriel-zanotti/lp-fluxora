@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluxora | Gestao Financeira Inteligente</title>
+  <meta name="description" content="Fluxora: SaaS de gestao financeira para previsibilidade de caixa, automacao e crescimento seguro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="index">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Fluxora - inicio">
+      <span class="brand-dot"></span>
+      <span>Fluxora</span>
+    </a>
+
+    <nav class="menu" aria-label="Navegacao principal">
+      <a data-nav-target="recursos" href="pages/recursos.html">Recursos</a>
+      <a data-nav-target="resultados" href="pages/resultados.html">Resultados</a>
+      <a data-nav-target="planos" href="pages/planos.html">Planos</a>
+      <a href="#demo">Demo</a>
+    </nav>
+
+    <a class="btn btn-small" href="#demo">Agendar demo</a>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <div class="hero-grid"></div>
+      <div class="hero-ring ring-1"></div>
+      <div class="hero-ring ring-2"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">SaaS para PMEs, e-commerces e startups</p>
+        <h1>Controle financeiro com clareza para crescer sem surpresas</h1>
+        <p class="subtitle">
+          Centralize fluxo de caixa, contas a pagar e receber, conciliacao bancaria e projecoes
+          em uma plataforma unica, com automacoes e alertas inteligentes.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="pages/planos.html">Ver planos</a>
+          <a class="btn btn-ghost" href="pages/recursos.html">Conhecer recursos</a>
+        </div>
+
+        <div class="kpis">
+          <article>
+            <strong>+38%</strong>
+            <span>mais previsibilidade de caixa</span>
+          </article>
+          <article>
+            <strong>-54%</strong>
+            <span>menos tempo no fechamento mensal</span>
+          </article>
+          <article>
+            <strong>99.9%</strong>
+            <span>disponibilidade de plataforma</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Painel de resumo financeiro">
+        <div class="panel-card panel-main">
+          <p>Saldo consolidado</p>
+          <h2>R$ 482.190</h2>
+          <span class="positive">+12,6% no mes</span>
+        </div>
+
+        <div class="panel-card panel-chart">
+          <p>Receita x despesa (ultimos 6 meses)</p>
+          <svg viewBox="0 0 320 120" aria-hidden="true">
+            <polyline points="0,95 55,87 110,74 165,69 220,50 275,42 320,28"></polyline>
+          </svg>
+        </div>
+
+        <div class="panel-row">
+          <div class="panel-card">
+            <p>Inadimplencia</p>
+            <h3>2,1%</h3>
+          </div>
+          <div class="panel-card">
+            <p>Burn rate</p>
+            <h3>R$ 37k</h3>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="ticker reveal" aria-label="Destaques de produto">
+      <span>Automacao de cobrancas</span>
+      <span>Consolidacao multi-conta</span>
+      <span>Forecast com cenarios</span>
+      <span>Alertas de risco de caixa</span>
+      <span>Permissoes e trilha de auditoria</span>
+    </section>
+
+    <section class="feature-preview reveal">
+      <article>
+        <h3>Operacao financeira sem retrabalho</h3>
+        <p>Automatize baixas, conciliacoes e cobrancas com regras personalizadas por negocio.</p>
+      </article>
+      <article>
+        <h3>Inteligencia para decisao rapida</h3>
+        <p>Visualize gargalos, projete caixa e acompanhe indicadores em tempo real.</p>
+      </article>
+      <article>
+        <h3>Governanca e seguranca</h3>
+        <p>Controle de acesso por perfil, logs de auditoria e protecao de dados sensiveis.</p>
+      </article>
+    </section>
+
+    <section class="demo-lab reveal" id="demo">
+      <div class="demo-head">
+        <p class="eyebrow">Demo interativa</p>
+        <h2>Veja como a Fluxora funciona no dia a dia da operacao</h2>
+        <p>Troque os modulos abaixo para explorar o comportamento da plataforma.</p>
+      </div>
+
+      <div class="demo-tabs" role="tablist" aria-label="Modulos da demo">
+        <button class="demo-tab is-active" role="tab" data-demo-tab="caixa">Fluxo de caixa</button>
+        <button class="demo-tab" role="tab" data-demo-tab="cobranca">Cobrancas</button>
+        <button class="demo-tab" role="tab" data-demo-tab="forecast">Forecast</button>
+      </div>
+
+      <div class="demo-panels">
+        <article class="demo-panel is-active" data-demo-panel="caixa">
+          <h3>Visao de caixa consolidada</h3>
+          <p>Entenda rapidamente sua saude financeira e antecipe semanas com risco de ruptura.</p>
+          <ul>
+            <li>Entradas e saidas por centro de custo</li>
+            <li>Alerta automatico de saldo minimo</li>
+            <li>Conciliacao bancaria em lote</li>
+          </ul>
+        </article>
+
+        <article class="demo-panel" data-demo-panel="cobranca">
+          <h3>Regua de cobranca automatizada</h3>
+          <p>Defina cadencias de contato e reduza inadimplencia com pouca operacao manual.</p>
+          <ul>
+            <li>Lembretes por email e WhatsApp</li>
+            <li>Segmentacao por perfil de risco</li>
+            <li>Historico de negociacoes por cliente</li>
+          </ul>
+        </article>
+
+        <article class="demo-panel" data-demo-panel="forecast">
+          <h3>Projecao inteligente de caixa</h3>
+          <p>Compare cenarios e veja impacto de contratacoes, reajustes e novos investimentos.</p>
+          <ul>
+            <li>Cenario base, conservador e agressivo</li>
+            <li>Atualizacao automatica com dados reais</li>
+            <li>Recomendacoes de ajuste de custo</li>
+          </ul>
+        </article>
+      </div>
+
+      <form class="demo-form" aria-label="Formulario para agendar demo">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="voce@empresa.com" required>
+        </label>
+        <label>
+          Empresa
+          <input type="text" name="empresa" placeholder="Nome da empresa" required>
+        </label>
+        <button class="btn" type="submit">Solicitar demonstracao</button>
+      </form>
+      <p class="demo-feedback" aria-live="polite"></p>
+    </section>
+
+    <section class="faq reveal" id="faq">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">Preciso trocar meu ERP para usar a Fluxora?</button>
+          <div class="faq-content">
+            <p>Nao. A Fluxora foi projetada para integrar com o stack existente e reduzir dependencia de processos manuais.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">Quanto tempo leva para implantar?</button>
+          <div class="faq-content">
+            <p>Em geral entre 1 e 3 semanas, dependendo do volume de integracoes e da complexidade do plano de contas.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">A plataforma atende multiempresa?</button>
+          <div class="faq-content">
+            <p>Sim. E possivel consolidar dados de multiplas empresas e filtrar visoes por unidade e centro de custo.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Fluxora (c) 2026. Gestao financeira moderna para negocios em crescimento.</p>
+  </footer>
+</body>
+</html>
