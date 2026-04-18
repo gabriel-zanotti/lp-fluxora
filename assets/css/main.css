@@ -15,6 +15,13 @@
   box-sizing: border-box;
 }
 
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 html,
 body {
   margin: 0;
@@ -260,6 +267,7 @@ main {
   line-height: 1.02;
   max-width: 14ch;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .subtitle {
@@ -435,6 +443,7 @@ main {
   background: rgba(7, 12, 20, 0.65);
   color: var(--text);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .demo-tab.is-active {
@@ -557,6 +566,7 @@ main {
   text-align: left;
   font: inherit;
   cursor: pointer;
+  line-height: 1.35;
 }
 
 .faq-content {
@@ -955,6 +965,7 @@ body.has-js .reveal.in-view {
   .topbar {
     border-radius: 16px;
     padding: 0.85rem;
+    gap: 0.55rem;
   }
 
   .menu {
@@ -969,6 +980,15 @@ body.has-js .reveal.in-view {
   main,
   .site-footer {
     width: min(100% - 1.2rem, 1160px);
+  }
+
+  .brand {
+    font-size: 0.95rem;
+  }
+
+  .topbar .btn-small {
+    padding: 0.5rem 0.75rem;
+    line-height: 1;
   }
 
   .hero {
@@ -1008,5 +1028,150 @@ body.has-js .reveal.in-view {
   .ticker {
     border-radius: 12px;
     margin-top: 0.8rem;
+  }
+
+  .demo-tabs,
+  .filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+
+  .demo-tab,
+  .filter-chip {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  [id] {
+    scroll-margin-top: 86px;
+  }
+
+  .topbar {
+    top: 0.5rem;
+    padding: 0.65rem;
+  }
+
+  .topbar,
+  main,
+  .site-footer {
+    width: calc(100% - 0.8rem);
+  }
+
+  .brand {
+    gap: 0.4rem;
+    font-size: 0.88rem;
+  }
+
+  .brand-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .topbar .btn-small {
+    font-size: 0.72rem;
+    padding: 0.44rem 0.6rem;
+    border-radius: 9px;
+  }
+
+  .hero,
+  .page-hero,
+  .demo-lab,
+  .timeline,
+  .cta-block {
+    padding: 1.1rem 0.82rem;
+    border-radius: 14px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    max-width: none;
+    font-size: clamp(1.42rem, 9vw, 1.95rem);
+    line-height: 1.1;
+  }
+
+  .hero-ring {
+    display: none;
+  }
+
+  .kpis strong {
+    font-size: 1.15rem;
+  }
+
+  .panel-card,
+  .resource-card,
+  .case-card,
+  .pricing-card,
+  .timeline-steps article {
+    padding: 0.9rem;
+  }
+
+  .demo-panels {
+    padding: 0.8rem;
+  }
+
+  .demo-form label {
+    font-size: 0.78rem;
+  }
+
+  .demo-form input {
+    padding: 0.62rem 0.65rem;
+  }
+
+  .pricing-card .btn,
+  .cta-block .btn {
+    width: 100%;
+  }
+
+  .plan-badge {
+    position: static;
+    width: fit-content;
+    margin-bottom: 0.35rem;
+  }
+
+  .billing-switch {
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 14px;
+    padding: 0.35rem;
+  }
+
+  .switch-btn {
+    padding: 0.36rem 0.62rem;
+    font-size: 0.82rem;
+  }
+
+  .site-footer {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .topbar .btn-small {
+    font-size: 0.68rem;
+    padding: 0.4rem 0.48rem;
+  }
+
+  .topbar {
+    gap: 0.4rem;
+  }
+
+  .demo-head h2,
+  .timeline h2,
+  .cta-block h2 {
+    font-size: clamp(1.22rem, 8vw, 1.6rem);
+  }
+
+  .faq-trigger {
+    padding: 0.78rem 0.75rem;
+    font-size: 0.92rem;
+  }
+
+  .faq-content p {
+    padding: 0 0.75rem 0.82rem;
+    font-size: 0.9rem;
   }
 }
