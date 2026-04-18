@@ -13,6 +13,10 @@ A LP foi criada para apresentar a proposta de valor da Fluxora com uma experienc
 
 O projeto e 100% front-end estatico (HTML, CSS e JavaScript), sem dependencias de framework.
 
+## URL em producao
+
+- https://lp-fluxora.vercel.app
+
 ## Paginas
 
 - `index.html`
